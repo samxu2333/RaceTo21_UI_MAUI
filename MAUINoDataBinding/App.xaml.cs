@@ -12,7 +12,7 @@ public partial class App : Application
 		//
 		// For this demo, I have deleted AppShell, but you can also simply
 		// ignore it.
-		MainPage = new MainPage();
+		MainPage = new NavigationPage(new MainPage());
 	}
 }
 

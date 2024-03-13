@@ -4,39 +4,31 @@
              x:Class="MAUINoDataBinding.MainPage"
              x:Name="MainContentHolder"
              >
-<VerticalStackLayout Spacing="20">
-        <AbsoluteLayout>
-        <HorizontalStackLayout x:Name = "Player1" AbsoluteLayout.LayoutBounds="10,10">
-            <!-- See note in MainPage.xaml.cs about how to refer to image files -->
-            <Image Source="dotnet_bot.png"></Image>
-            <Image Source="dotnet_bot.png"></Image>
-        </HorizontalStackLayout>
-        <HorizontalStackLayout x:Name = "Player2" AbsoluteLayout.LayoutBounds="600,10">
-            <Image Source="dotnet_bot.png"></Image>
-            <Image Source="dotnet_bot.png"></Image>
-            <Image Source="dotnet_bot.png"></Image>
-        </HorizontalStackLayout>
-        <HorizontalStackLayout x:Name = "Player3" AbsoluteLayout.LayoutBounds="10,300">
-            <Image Source="dotnet_bot.png"></Image>
-            <Image Source="dotnet_bot.png"></Image>
-            <Image Source="dotnet_bot.png"></Image>
-        </HorizontalStackLayout>
-        <HorizontalStackLayout x:Name = "Player4" AbsoluteLayout.LayoutBounds="600,300">
-            <Image Source="dotnet_bot.png"></Image>
-            <Image Source="dotnet_bot.png"></Image>
-            <Image Source="dotnet_bot.png"></Image>
-            <Image Source="dotnet_bot.png"></Image>
-        </HorizontalStackLayout>
-    </AbsoluteLayout>
-        <HorizontalStackLayout Spacing="20">
-            <Label x:Name="PlayerName" Text="Player:" FontSize="20" VerticalTextAlignment="Center" />
-            <Button Text="Add Robot" Clicked="Add_Clicked"/>
-            <Button Text="Remove Robot" Clicked="Remove_Clicked" />
-        </HorizontalStackLayout>
-    </VerticalStackLayout>
-    <!-- INTERMEDIATE CHALLENGE: Can you change this XAML and its code-behind so that a
-    Frame appears around the current player's cards? TIP: This may involve changes to the hierarchy
-    for each HorizontalStack, and which object you "talk to" in order to add or remove robots
-    for each player! -->
+
+    <Grid>
+        <Image Source="background.jpg" Aspect="AspectFill" />
+        <VerticalStackLayout Margin="90" Spacing="20">
+        <Label Text="Race To 21" 
+               FontSize="50"
+               TextColor="white"
+               HorizontalOptions="Center"
+               VerticalOptions="Center"/>
+            <HorizontalStackLayout Margin ="10" Spacing="0" HorizontalOptions="Center" VerticalOptions="Center">
+                <Image Source="card_clubs_K.png" Aspect="AspectFit" />
+                <Image Source="card_back.png" Aspect="AspectFit"/>
+                <Image Source="card_diamonds_J.png" Aspect="AspectFit"/>
+            </HorizontalStackLayout>
+
+            <Button
+            x:Name="StartButton"
+            Text="Start"
+            FontSize="40"
+            TextColor="white"
+            HorizontalOptions="Center"
+            BackgroundColor="Red"
+            Clicked="Start_Clicked"/>
+
+        </VerticalStackLayout> 
+    </Grid>
 </ContentPage>
 

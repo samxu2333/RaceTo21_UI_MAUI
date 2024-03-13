@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MAUINoDataBinding.GamePage"
+             Title="GamePage">
+
+    <Grid>
+        
+
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+
+
+
+        <BoxView Grid.Column="0" Grid.Row="0" Color="ForestGreen"/>
+        
+        <Rectangle Fill="Brown"
+           WidthRequest="150"
+           HeightRequest="50"
+           HorizontalOptions="Center"
+           VerticalOptions="Center"/>
+        <Label Text="Scoreboard"
+               TextColor="White"
+               HorizontalOptions="Center"
+               VerticalOptions="Center" />
+
+        <BoxView Grid.Column="1" Color="ForestGreen"/>
+       
+        <Entry
+            Grid.Column="1"
+            x:Name="PlayerA"
+            WidthRequest="120"
+            FontSize="10"
+            Placeholder="Enter Player's name"
+            IsVisible="True"
+            HorizontalOptions="Center"
+            VerticalOptions="Center"/>
+        
+        
+        
+        
+
+        <BoxView Grid.Row="1"
+                 Color="ForestGreen" />
+       
+        <Entry
+ Grid.Row="1"
+ x:Name="PlayerB"
+ WidthRequest="120"
+ FontSize="10"
+ Placeholder="Enter Player's name"
+ IsVisible="True"
+ HorizontalOptions="Center" 
+  VerticalOptions="Center"/>
+
+        <BoxView Grid.Row="2"
+         Color="ForestGreen" />
+        <Entry
+        Grid.Row="2"
+        x:Name="PlayerC"
+        WidthRequest="120"
+        FontSize="10"
+        Placeholder="Enter Player's name"
+        IsVisible="True"
+        HorizontalOptions="Center"
+        VerticalOptions="Center"/>
+        
+        
+
+        <BoxView Grid.Row="3"
+            Color="ForestGreen" />
+
+        
+
+        <BoxView Grid.Row="1" Grid.Column="1"
+             Color="ForestGreen" />
+
+        <BoxView Grid.Row="2" Grid.Column="1"
+     Color="ForestGreen" />
+
+        <BoxView Grid.Row="3" Grid.Column="1"
+     Color="ForestGreen" />
+
+        <Entry
+Grid.Row="3" Grid.Column="1"
+x:Name="PlayerF"
+WidthRequest="120"
+FontSize="10"
+Placeholder="Enter Player's name"
+IsVisible="True"
+HorizontalOptions="Center" 
+ VerticalOptions="Center"/>
+
+
+        <BoxView Grid.Row="0" Grid.Column="2"
+            Color="ForestGreen" />
+
+        <Entry
+Grid.Row="0" Grid.Column="2"
+x:Name="PlayerD"
+WidthRequest="120"
+FontSize="10"
+Placeholder="Enter Player's name"
+IsVisible="True"
+HorizontalOptions="Center" 
+ VerticalOptions="Center"/>
+
+        <BoxView Grid.Row="1" Grid.Column="2"
+     Color="ForestGreen" />
+
+        <BoxView Grid.Row="2" Grid.Column="2"
+     Color="ForestGreen" />
+
+        <BoxView Grid.Row="3" Grid.Column="2"
+     Color="ForestGreen" />
+        <Entry
+Grid.Row="3" Grid.Column="2"
+x:Name="PlayerG"
+WidthRequest="120"
+FontSize="10"
+Placeholder="Enter Player's name"
+IsVisible="True"
+HorizontalOptions="Center" 
+ VerticalOptions="Center"/>
+
+        <BoxView Grid.Row="0" Grid.Column="3"
+     Color="ForestGreen" />
+
+        <Entry
+Grid.Row="0" Grid.Column="3"
+x:Name="PlayerE"
+WidthRequest="120"
+FontSize="10"
+Placeholder="Enter Player's name"
+IsVisible="True"
+HorizontalOptions="Center"
+VerticalOptions="Center"/>
+
+        <BoxView Grid.Row="1" Grid.Column="3"
+     Color="ForestGreen" />
+
+        <BoxView Grid.Row="2" Grid.Column="3"
+     Color="ForestGreen" />
+
+        <BoxView Grid.Row="3" Grid.Column="3"
+     Color="ForestGreen" />
+        <Entry
+Grid.Row="3" Grid.Column="3"
+x:Name="PlayerH"
+WidthRequest="120"
+FontSize="10"
+Placeholder="Enter Player's name"
+IsVisible="True"
+HorizontalOptions="Center" 
+ VerticalOptions="Center"/>
+
+        <BoxView Grid.Row="0" Grid.Column="4"
+     Color="ForestGreen" />
+        <Rectangle
+            Grid.Row="0" Grid.Column="4"
+            Fill="Brown"
+   WidthRequest="150"
+   HeightRequest="50"
+   HorizontalOptions="Center"
+   VerticalOptions="Center"/>
+        <Label
+            Grid.Row="0" Grid.Column="4"
+            Text="Exit"
+       TextColor="White"
+       HorizontalOptions="Center"
+       VerticalOptions="Center" />
+
+        <BoxView Grid.Row="1" Grid.Column="4"
+     Color="ForestGreen" />
+
+        <BoxView Grid.Row="2" Grid.Column="4"
+     Color="ForestGreen" />
+
+        <BoxView Grid.Row="3" Grid.Column="4"
+     Color="ForestGreen" />
+
+        <Button Grid.Row="2"
+                Grid.ColumnSpan="2"
+                Grid.Column="2"
+                x:Name="SubmitButton"
+                Text="Submit"
+                FontSize="40"
+                TextColor="white"
+                HorizontalOptions="Center"
+                BackgroundColor="Red"
+                Clicked="SubmitButton_Clicked"
+                />      
+
+    </Grid>
+</ContentPage>
